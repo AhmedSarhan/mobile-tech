@@ -1,5 +1,5 @@
 const vuexPresist = ({ store }) => {
-  // console.log('it is working localStorage style');
+  console.log('it is working localStorage style');
   let localCartProducts = [];
   let localConfirmedOrders = [];
   let localValidCoupon = {
