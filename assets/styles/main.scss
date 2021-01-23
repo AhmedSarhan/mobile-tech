@@ -1,0 +1,57 @@
+body{
+    font-family: 'Space Grotesk';
+    background-color: #f3f3ff;
+    
+    .slick-prev:before, .slick-next:before{
+        color: orange;
+    }
+    .slick-dots{
+        bottom: -10px !important;
+    }
+    .slick-dots li button:before, .slick-dots li.slick-active button:before{
+        color: orange;
+        font-size: 18px;
+
+    }
+    
+    button{
+        outline: none !important;
+        &:focus{
+        outline: none !important;
+        box-shadow: inherit !important;
+        }
+    }
+}
+
+.btn-custom-primary{
+    background-color: #e67e22;
+    box-shadow: 0 2px 2px #eee;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 15px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: 5px auto;
+    &:hover{
+        background-color: transparent;
+        color: #e67e22;
+        border: 1px solid #e67e22;
+    }
+
+}
+.btn-custom-outline {
+    margin: 0;
+    background-color: transparent;
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    padding: 8px 15px;
+    text-align: center;
+    cursor: pointer;
+    // display: block;
+    border-radius: 5;    
+    &:hover {
+      background-color: #e67e22;
+      color: #fff;
+    }
+}

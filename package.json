@@ -1,0 +1,26 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "moment": "^2.29.1",
+    "nuxt": "^2.14.6",
+    "vue-picture-swipe": "^2.0.2",
+    "vue-slick-carousel": "^1.0.6",
+    "vue-social-sharing": "^3.0.4",
+    "vuelidate": "^0.7.6"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.32.4",
+    "sass-loader": "^10.1.1"
+  }
+}
