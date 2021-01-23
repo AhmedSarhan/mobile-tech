@@ -1,7 +1,9 @@
 <template>
   <div>
-    <the-header />
-    <Nuxt />
+    <client-only placeholder="Loading...">
+      <the-header />
+      <Nuxt />
+    </client-only>
   </div>
 </template>
 
