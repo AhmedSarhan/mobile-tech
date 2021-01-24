@@ -45,7 +45,7 @@
             </div>
             <div class="flex" v-if="order.date">
               <div>Order Date</div>
-              <div>{{ order.date }} EGP</div>
+              <div>{{ order.date }}</div>
             </div>
             <hr />
             <div class="flex">
