@@ -16,7 +16,7 @@
           <h4>{{ order.number }}</h4>
         </div>
         <div class="divTableCell" :data-label="'Paid Total'">
-          <h4>{{ order.paidTotal }}</h4>
+          <h4>{{ order.paidTotal }} EGP</h4>
         </div>
         <div class="divTableCell" :data-label="'Order Date'">
           <h4>{{ order.date }}</h4>
