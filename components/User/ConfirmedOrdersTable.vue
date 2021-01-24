@@ -25,7 +25,7 @@
           <button
             type="button"
             class="btn btn-custom-primary"
-            @click="showOrderDetailsHandler(order.id)"
+            @click="showOrderDetailsHandler(order)"
           >
             More Details
           </button>
@@ -39,8 +39,8 @@
 export default {
   props: ["confirmedOrders"],
   methods: {
-    showOrderDetailsHandler(id) {
-      this.$emit("showDetails", id);
+    showOrderDetailsHandler(order) {
+      this.$emit("showDetails", order);
     },
   },
 };

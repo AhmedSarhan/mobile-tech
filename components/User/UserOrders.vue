@@ -38,12 +38,8 @@ export default {
     closeModal() {
       this.showModal = false;
     },
-    selectOrder(id) {
-      let selectedOrders = [];
-      selectedOrders = this.confirmedOrders.filter((order) => {
-        return order.id === id;
-      });
-      this.selectedOrder = selectedOrders[0];
+    selectOrder(order) {
+      this.selectedOrder = order;
       this.showModal = true;
       // console.log("running", this.selectedOrder);
     },
