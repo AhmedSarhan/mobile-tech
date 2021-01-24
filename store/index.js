@@ -94,6 +94,7 @@ export const mutations = {
     state.validCoupon = data.localValidCoupon;
     state.userData = data.localUser;
     state.wishListProducts = data.localWishList;
+    state.comparingProducts = data.localComparing;
     state.products = data.localProducts.length
       ? data.localProducts
       : initialProducts;
@@ -110,6 +111,10 @@ export const mutations = {
   SET_CART(state) {
     localStorage.setItem('wishList', JSON.stringify(state.wishListProducts));
     localStorage.setItem('cartProducts', JSON.stringify(state.cartProducts));
+    localStorage.setItem(
+      'comparingProducts',
+      JSON.stringify(state.comparingProducts)
+    );
   },
   SET_PRODUCTS(state, products) {
     for (let key in products) {

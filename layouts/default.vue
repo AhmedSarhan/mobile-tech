@@ -1,11 +1,12 @@
 <template>
   <div>
-    <client-only placeholder="Loading...">
+    <client-only>
       <the-header />
+      <loading slot="placeholder" />
+
       <Nuxt />
     </client-only>
   </div>
 </template>
 
-<style>
-</style>
+

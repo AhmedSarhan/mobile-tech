@@ -39,7 +39,7 @@ export default {
   },
   env: {
     baseUrl: process.env.BASE_URL || 'https://sarhan-food-menu.firebaseio.com/',
-    hostUrl: process.env.HOST_URL || 'https://nuxt-color-picker.vercel.app',
+    hostUrl: process.env.HOST_URL || 'http://mobile-tech.vercel.app',
   },
   pageTransition: {
     name: 'fade',
