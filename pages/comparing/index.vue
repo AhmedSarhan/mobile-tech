@@ -19,6 +19,27 @@
           v-for="product in comparingProducts"
           :key="product.id"
         >
+          <div class="icons">
+            <div>
+              <i
+                class="fa fa-shopping-cart"
+                aria-hidden="true"
+                @click="
+                  addToCart({
+                    ...product,
+                    quantity: 1,
+                  })
+                "
+              ></i>
+            </div>
+            <div>
+              <i
+                :class="product.wishListed ? 'fa fa-heart' : 'fa fa-heart-o'"
+                aria-hidden="true"
+                @click="wishList(product)"
+              ></i>
+            </div>
+          </div>
           <img :src="product.cover" />
         </td>
       </tr>
@@ -85,7 +106,9 @@
 <script>
 import { mapState, mapActions } from "vuex";
 export default {
-  methods: {},
+  methods: {
+    ...mapActions(["addToCart", "wishList"]),
+  },
   computed: {
     ...mapState(["comparingProducts"]),
     comparingCount() {
@@ -112,6 +135,20 @@ table {
   }
   .value {
     font-size: 18px;
+  }
+  td {
+    position: relative;
+  }
+  .icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #e67e22;
+    font-size: 20px;
+
+    i {
+      cursor: pointer;
+    }
   }
 }
 table {
